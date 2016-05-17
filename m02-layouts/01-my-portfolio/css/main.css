@@ -361,7 +361,8 @@ h1, h2, h3, h4, h5, h6{
     font-style: normal;
 }
 
-.icon {
+.icon,
+.skill-list li:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'training' !important;
     speak: none;
@@ -483,6 +484,72 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*=====  End of Font Face  ======*/
+
+/*=====================================
+=            Skills styles            =
+=====================================*/
+.skill-list{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.skill-list h3{
+  color:red;
+  font-size:24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.skill-list p{
+  margin-top: 4px;
+}
+.skill-list li{
+  margin-bottom: 10px;
+  position: relative;
+  padding-left:40px;
+}
+.skill-list li:before{
+  border:dotted 1px red;
+  width:30px;
+  height:30px;
+  background-color: wheat;
+  position: absolute;
+  left:0;
+  top: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+@media (min-width:768px) {
+  .skill-list li{
+    padding-left:60px;
+    width:50%;
+    float: left;
+    padding-right: 20px;
+  }
+  .skill-list li:before{
+    width:45px;
+    height:45px;
+    line-height: 45px;
+    font-size: 30px;
+  }
+}
+@media (min-width:980px) {
+  .skill-list li{
+    width:33.3333%;
+  }
+}
+.skill-list li.skill1:before {  content:"\e903";}
+.skill-list li.skill2:before {  content:"\e906";}
+.skill-list li.skill3:before {  content:"\e901";}
+.skill-list li.skill4:before {  content:"\e900";}
+.skill-list li.skill5:before {  content:"\e907";}
+.skill-list li.skill6:before {  content:"\f21d";}
+
+
+
+/*=====  End of Skills styles  ======*/
 
 
 
