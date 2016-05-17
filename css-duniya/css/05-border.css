@@ -1,0 +1,116 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+
+Font related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+border-width: pixels
+border-style: none solid dotted dashed double ridge groove inset outset
+border-color: 
+border-radius:
+
+
+
+
+border-image:
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+
+*/
+
+.demo-dabba{
+	padding: 25px;
+	margin: 15px;
+	background-color: #F6F8FF;	
+}
+
+.dabba{
+	width:120px;
+	height: 120px;
+	background-color: lightblue;
+	margin:10px;
+	padding:10px;
+	text-align: center;
+	color:orange;
+}
+
+.dabba_bdr1{
+	border-style: solid;
+	border-width: 1px;
+	border-color: blue;
+}
+.dabba_bdr2{
+	border-left-style: solid;
+	border-left-width: 15px;
+	border-left-color: blue;
+	border-right-style: solid;
+	border-right-width: 15px;
+	border-right-color: green;
+	border-top-style: solid;
+	border-top-width: 15px;
+	border-top-color: red;
+	border-bottom-style: solid;
+	border-bottom-width: 15px;
+	border-bottom-color: orange;
+}
+.dabba_bdr3{
+	border-style: solid double;
+	border-width: 10px 20px 30px;
+	border-color: blue red green yellow;
+}
+.dabba_bdr4{
+	border:solid 10px green;
+}
+.dabba_bdr5{
+	border:solid 10px green;
+	border-radius: 50% 0 20%;
+	border-top-right-radius: 
+}
+
+.news{
+	width:400px;
+	border:solid 1px #CCC;
+	margin:10px auto;
+}
+.news header{
+	padding:15px 10px;
+	background-color: wheat;
+	position: relative;
+}
+.news header:after{
+	width:0;
+	height: 0;
+	position: absolute;
+	content: "";
+	border-width:15px;
+	border-color: wheat transparent transparent;
+	border-style: solid;
+	left:0;
+	right:0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: -30px;
+}
+.news header h2{
+	margin:0;
+}
+.news p{
+	padding:15px;
+}
+
+
+._bdr{
+	color:red;
+}

@@ -1,0 +1,153 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+
+Position related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	position: static | relative | absolute | sticky  |  fixed
+		Applies to all elements
+
+	left, top, right, bottom
+		Applies to positioned elements
+	
+	z-index: auto | <integer>
+		Applies to positioned elements
+	
+	visibility: visible | hidden | collapse
+		Applies to all elements
+	
+	overflow: visible | hidden | scroll | auto
+	overflow-x
+	overflow-y
+
+*/
+
+.demo-dabba{
+	margin: 15px auto;
+	background-color: #F6F8FF;
+	border:solid 5px green;
+	width:1000px;
+}
+
+.dabba{
+	border:solid 1px black;
+	margin:10px;
+	padding: 10px;
+}
+.lightgreen	{background-color: lightgreen;}
+.lightblue	{background-color: lightblue;}
+.orange			{background-color: orange;}
+.crimson		{background-color: crimson;}
+.indigo			{background-color: indigo;}
+.violet			{background-color: violet;}
+
+.dabba3{
+	position: relative;
+	top: 80px;
+	left:150px;
+	z-index: 2;
+}
+
+.dabba4{
+	position: relative;
+	z-index: 1;
+}
+.dabba5{
+	position: relative;
+	z-index: 3;
+}
+
+
+
+.dab2{
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom:0;
+	right:0;
+	width:300px;
+	height: 50px;
+	margin:auto;
+}
+
+span.dab2{
+	background-color: rgba(34,34,34,.5);
+	z-index: 1;
+}
+div.dab2{
+	z-index: 1;
+}
+
+
+.box{
+	width:1200px;
+	border:solid 5px #CCC;
+	margin: 40px auto 300px;
+	position: relative;
+}
+.box img{
+	display: block;
+}
+.box h1{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	padding:20px 50px;
+	margin:0;
+	position: absolute;
+	left:25%;
+	bottom: 10%;
+	width:500px;
+	color: #FFF;
+}
+
+
+.arrow{
+	position: absolute;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	background-color: #CCC;
+	text-align: center;
+	line-height: 50px;
+	top:0 ;
+	bottom:0 ;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.arrow.left{left:0;}
+.arrow.right{right:0;}
+
+.widget{
+	border:solid 1px red;
+	background-color: lightgreen;
+	margin:10px;
+	padding:10px;
+}
+
+.widget1{
+	position: static;
+	top: 30px;
+}
+
+.widget2{
+	position: relative;
+	top: 40px;
+}
+.widget3{
+	width:300px;
+	position: absolute;
+	left:0;
+	top: 0;
+}
+
+

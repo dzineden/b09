@@ -1,0 +1,314 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #444;
+    background-color: #efefef;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjM1Q0JENDk3MTVBQTExRTY5NUVGQzlEQzg2NDg1ODYyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjM1Q0JENDk4MTVBQTExRTY5NUVGQzlEQzg2NDg1ODYyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzVDQkQ0OTUxNUFBMTFFNjk1RUZDOURDODY0ODU4NjIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzVDQkQ0OTYxNUFBMTFFNjk1RUZDOURDODY0ODU4NjIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4pZRGzAAAAHUlEQVR42mKUlJRkAAIpEMEEYwDBMyYYA0QABBgAIecCUWZ0ljgAAAAASUVORK5CYII=);
+
+    font: normal 300 14px/1.4 'Open Sans', sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+.site-header{
+  background-color: #FFF;
+  padding:1px;
+}
+@media (max-width:979px) {
+  .site-header{
+    height:60px;
+  }
+  .site-header .logo img{
+    width: 70px;
+    height:auto;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .mobile-menu{
+    float: right;
+    width:24px;
+    height:18px;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .mobile-menu span{
+    width:100%;
+    height:3px;
+    position: absolute;
+    background-color: green;
+  }
+  .mobile-menu span:first-child{
+    top: 0;
+  }
+  .mobile-menu span:nth-child(2){
+    top: 7px;
+  }
+  .mobile-menu span:last-child{
+    top: 14px;
+  }
+
+  .site-header nav,
+  .site-header .social-links,
+  .site-header .contact{
+    display: none;
+  }
+
+}
+
+.banner{
+  border:dotted 1px red;
+}
+.banner img{
+  width:100%;
+  height:auto;
+}
+
+.container{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: wheat;
+}
+@media (min-width:980px) {
+  .site-header{
+    width:200px;
+    position: fixed;
+    left:0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(255,255,255,.7);
+    text-align: center;
+  }
+  .site-header .logo img{
+    max-width: 100%;
+    height:auto;
+  }
+
+  .sitelinks{
+    border:solid 3px red;
+    clear:both;    
+  }
+
+
+  .contact{
+    border:dashed 1px green;
+    position: fixed;
+    bottom: 0;
+  }
+  .wrap{
+    margin-left: 200px;
+  }
+  .container{
+    width:760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+}
+@media (min-width:1200px) {
+  .site-header{
+    width:250px;
+  }
+  .wrap{
+    margin-left: 250px;
+  }
+  .container{
+    width:850px;
+  }
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

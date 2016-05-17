@@ -1,0 +1,97 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+
+Box related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+width, min-width, max-width
+height, min-height, max-height 
+padding
+margin
+overflow: visible | hidden | scroll | auto
+float : left | right | none
+clear: none | left | right | both
+
+
+box-sizing – content-box | padding-box | border-box
+opacity:
+
+*/
+
+.demo-dabba{
+	margin: 15px;
+	background-color: #F6F8FF;
+	border:solid 5px green;
+	width:500px;
+}
+
+.margin-demo{
+	border:solid 5px blue;
+	margin:10%;
+}
+
+.demo-dabba1{
+	margin: 80px;
+	background-color: #F6F8FF;
+	border:solid 5px green;
+}
+
+.dabba{
+	background-color: lightblue;
+	border: solid 3px gray;
+	margin:20px;
+	padding:20px;
+	min-width: 100px;
+	max-width: 50%;
+	min-height: 80px;
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+.demo-dabba2{
+	width:1000px;
+	background-color: lightgreen;
+	padding:30px 0;
+	margin:10px auto
+}
+.box{
+	width:25%;
+	min-height: 75px;
+	max-height: 125px;
+	background-color: lightblue;
+	margin-bottom: 10px;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+
+
+.float-demo-wrap{
+	width:1000px;
+	border:solid 4px red;
+	background-color: wheat;
+	margin: 20px auto;
+}
+.float-demo-wrap:after{
+	content:"";
+	clear: both;
+	display: table;
+}
+
+.fld{
+	border:dashed 2px green;
+	padding:10px;
+	margin:10px;
+	width:150px;
+	height:75px;
+}
+.fl{float: left;}
+.fr{float: right;}
+

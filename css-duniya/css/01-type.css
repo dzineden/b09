@@ -1,0 +1,91 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+text transform - https://css-tricks.com/almanac/properties/t/text-transform/
+
+							 - https://developer.mozilla.org/en/docs/Web/CSS/text-transform
+							 
+Color names		 - http://html-color-codes.info/color-names/
+
+
+*/
+/* 
+Font related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	font-style: normal | italic | oblique
+	font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+	font-size: px | % | em  | rem  | vw  | vh
+	line-height:
+	font-family:
+		font:  [font-style font-weight font-size/line-height font-family]
+	text-transform: none | capitalize | uppercase | lowercase | full-width
+	color: 
+				color names 
+				hex decimal code (#RRGGBB)
+				rgb();
+				rgba()
+	text-decoration: none | underline | overline | line-through
+
+*/
+
+.demo-dabba{
+	padding: 25px;
+	margin: 15px;
+	background-color: #F6F8FF;
+	text-transform: capitalize;
+	
+}
+address{
+	font-style: normal;
+}
+.text-italic{
+/*
+	 	font-style: italic;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		font-family: Sacramento, serif;
+ */
+	font: italic normal 16px/20px Sacramento, serif;
+/* 
+	color:red; colornames
+	color:#FF0000; Hex code
+	color:#F00; shorthand hex code
+	color:rgb(255,0,0); rgb - value goes from 0 to 255 gor rgb
+ */
+	rgba:(255,0,0,1); /* rgba - alpha value goes from 0 to 1*/
+}
+.txt-weight-demo,
+.txt-weight-demo1,
+.txt-weight-demo2,
+.txt-weight-demo3,
+.txt-weight-demo4,
+.txt-weight-demo5,
+.txt-weight-demo6{
+	font-family: Roboto;
+}
+.txt-weight-demo1{font-weight: 100;}
+.txt-weight-demo2{font-weight: 300;}
+.txt-weight-demo3{font-weight: 400;}
+.txt-weight-demo4{font-weight: 500;}
+.txt-weight-demo5{font-weight: 700;}
+.txt-weight-demo6{font-weight: 900;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{font-weight: normal}
+
+
+

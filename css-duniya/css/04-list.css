@@ -1,0 +1,74 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+	list-style: disc | circle | square | lower-roman | upper-roma | lower-alpha | upper-alpha | none;
+	list-style-image: url('../img/bullet-clock.png');
+	list-style-position: inside;
+
+
+Font related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+*/
+
+.demo-dabba{
+	padding: 25px;
+	margin: 15px;
+	background-color: #F6F8FF;	
+}
+
+.list-style-demo1{
+	/* list-style: square; */
+	list-style-image: url('../img/bullet-clock.png');
+	list-style-position: inside;
+	border: solid 1px red;
+}
+.list-style-demo1 li{
+	border: solid 1px green;
+	margin:2px;
+}
+.list-style-demo2{
+	list-style: decimal-leading-zero;
+	border: solid 1px red;
+}
+.list-style-demo2 li{
+	border: solid 1px green;
+	margin:2px;
+}
+
+.linkz{
+	background-color: #C914DE;
+	padding:10px;
+	border-radius: 10px;
+}
+.linkz ul{
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+	text-align: center;
+}
+.linkz ul li{
+	display: inline;
+	border:solid 1px red;
+	
+}
+.linkz ul li a{
+	color:#FFF;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-decoration: none;
+}
+.linkz ul li a:hover{
+	color:#DBDBDB;
+}
+
