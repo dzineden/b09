@@ -43,7 +43,15 @@
       <ul class="sitelinks">
         <li class="active"><a href="#"><i class="icon icon-diamond"></i> Home</a></li>
         <li><a href="#"><i class="icon icon-travel"></i> About me</a></li>
-        <li><a href="#"><i class="icon icon-ambulance"></i> Work</a></li>
+        <li><a href="#"><i class="icon icon-ambulance"></i> Work</a>
+          <ul class="submenu">
+            <li><a href="#">Sublink 1</a></li>
+            <li><a href="#">Sublink 1</a></li>
+            <li><a href="#">Sublink 1</a></li>
+            <li><a href="#">Sublink 1</a></li>
+            <li><a href="#">Sublink 1</a></li>
+          </ul>
+        </li>
         <li><a href="#"><i class="icon icon-password"></i> Gallery</a></li>
         <li><a href="#"><i class="icon icon-street-view"></i> Blog</a></li>
         <li><a href="#"><i class="icon icon-bolt"></i> Hire me</a></li>
@@ -86,8 +94,35 @@
     </li>
   </ul>
 </section>
+<section class="container">
+  <div class="box">
+    <div class="box-pic"><img src="http://fakeimg.pl/350x200/00CED1/FFF/?text=img+placeholder"></div>
+    <div class="box-details">
+      <h2>some heading will come here</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vitae, nam! Id ab, eum modi sit sunt voluptas, quia ipsa quasi iste veniam repellendus minus nisi alias expedita debitis dolores!</p>
+    </div>
+  </div>
+</section>
 
-
+<style>
+  .box{border: solid 1px red;}
+  .box-pic{
+    border: solid 1px blue;
+    float: left;
+  }
+  .box-pic img{
+    width: 150px;
+  }
+  @media (min-width: 768px) {
+    .box-pic img{
+      width: 300px;
+    }
+  }
+  .box-details{
+    border: solid 1px green;
+    margin-left: 360px;
+  }
+</style>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

@@ -72,7 +72,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .site-header{
-  background-color: #0bbcff;
+  background: #0bbbff;
+  background: -moz-linear-gradient(left,  #0bbbff 0%, #02298c 100%);
+  background: -webkit-linear-gradient(left,  #0bbbff 0%,#02298c 100%);
+  background: linear-gradient(to right,  #0bbbff 0%,#02298c 100%);
+
   border-bottom: solid 4px #9c27b0;
 }
 .container{
@@ -285,6 +289,7 @@ h1, h2, h3, h4, h5, h6{
     padding-bottom: 80px;
     border-radius: 0 0 10px 10px;
     display: none;
+    z-index: 10;
   }
 }
 @media (min-width:768px) {
@@ -294,7 +299,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 10px;
     display: block !important;
   }
-  .sitelinks li{
+  .sitelinks > li{
     display: inline-block;
   }
 
@@ -305,7 +310,7 @@ h1, h2, h3, h4, h5, h6{
   margin:0;
 }
 .sitelinks li{}
-.sitelinks li a{
+.sitelinks > li > a{
   display: block;
   font-size: 15px;
   line-height: 40px;
@@ -320,8 +325,8 @@ h1, h2, h3, h4, h5, h6{
   display: inline-block;
   text-align: center;  
 }
-.sitelinks li.active a,
-.sitelinks li a:hover{
+.sitelinks > li.active > a,
+.sitelinks > li > a:hover{
   background-color: #9c27b0;
   color:#FFF;
 }
@@ -334,7 +339,7 @@ h1, h2, h3, h4, h5, h6{
   border-bottom-color: #9c27b0;
 }
 @media (min-width:768px) {
-  .sitelinks li a{
+  .sitelinks > li > a{
     line-height: 30px;
     padding-left: 10px;
     padding-right: 12px;
@@ -344,7 +349,27 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-
+/**
+ *
+ * Submenu styles
+ *
+ */
+.sitelinks li{
+  position: relative;
+}
+.sitelinks li .submenu{
+  background-color: red;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  left:0;
+  top: 30px; 
+  width: 200px;
+  display: none;
+}
+.sitelinks li:hover .submenu{
+  display: block;
+}
 
 
 /*=================================
